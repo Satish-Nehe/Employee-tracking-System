@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+.Header {
+    display: flex;
+    border: 1px solid black;
+    height: auto;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(39, 35, 35);
+    color: white;
+    flex-wrap: wrap; 
+}
+
+.Header .Logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: lightgreen;
+}
+
+.Header select {
+    max-width:min-content;
+    background: none;
+    padding: 5px;
+    /* border: 1px solid white; */
+    color: white;
+    cursor: pointer;
+}
+
+.Header option {
+    color: black;
+}
+
+.button button {
+    background-color: blue;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button button:hover {
+    background-color: darkblue;
+}
+
+@media screen and (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    .Header .Logo {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .button button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+.body{
+    height: 80dvh;
+}
+.upper-container{
+    height: 60dvh;
+    background-color: blue; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.upper-container div{
+  /* border: 1px solid black; */
+  padding: 50px;
+  width:80dvw;
+  height: 60dvh;
+ display: flex;
+ color: white;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 20px;
+}
+.upper-container h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.upper-container p{
+    font-size: 18px;
+}
+.lower-container{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+ 
+}
+.lower-container .inner-container{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 80px);
+    align-items: center;
+}
+.inner-container div{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.lower-container img{
+  height: 50px;
+  width: 50px;
+}
